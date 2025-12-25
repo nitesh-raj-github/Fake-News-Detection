@@ -1,0 +1,60 @@
+.history-page {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 25px 0;
+}
+
+.history-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.history-empty {
+  text-align: center;
+  color: #bbb;
+  font-size: 16px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.history-card {
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.history-snippet {
+  color: #d4e2ff;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.history-prob {
+  display: flex;
+  justify-content: space-between;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.history-details summary {
+  cursor: pointer;
+  color: #4da3ff;
+}
+
+.history-ai {
+  margin-top: 8px;
+  color: #d4e2ff;
+  white-space: pre-wrap;
+}

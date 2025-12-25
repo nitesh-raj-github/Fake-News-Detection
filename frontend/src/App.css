@@ -1,0 +1,141 @@
+/* THEME */
+:root {
+  --accent: #22c55e;
+  --text-main: #e5e7eb;
+  --text-muted: #94a3b8;
+  --border-soft: rgba(148, 163, 184, 0.18);
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #a3a3a3, #2f2e2e);
+  color: var(--text-main);
+  font-family: Inter, sans-serif;
+}
+
+.container {
+  width: 92%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* SPACING */
+.live-strip-wrapper {
+  margin: 28px 0 40px;
+}
+
+.section-divider {
+  height: 1px;
+  margin: 40px 0;
+  background: linear-gradient(to right, transparent, var(--accent), transparent);
+}
+
+.analyzer-card {
+  margin-top: 36px;
+}
+
+.video-card {
+  margin-top: 48px;
+}
+
+/* GLASS CARD */
+.glass-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1.5px solid var(--border-soft);
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+.input-box,
+.video-input,
+.video-textarea {
+  width: 100%;
+  background: #020617;
+  color: #fff;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  padding: 14px;
+}
+
+/* BUTTON */
+.analyze-btn {
+  margin-top: 14px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* TRUST METER */
+.trust-meter {
+  height: 12px;
+  background: #020617;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 14px;
+}
+
+.trust-fill.safe {
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+}
+
+.trust-fill.danger {
+  background: linear-gradient(90deg, #ef4444, #dc2626);
+}
+
+/* BADGES */
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+.badge-real {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+}
+
+.badge-fake {
+  background: rgba(248, 113, 113, 0.2);
+  color: #fecaca;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  opacity: 0.85;
+}
+/* ================================
+   🧭 NAVBAR (FIXED)
+================================ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;              /* 👈 keep consistent */
+  z-index: 1000;
+  background: rgba(11, 18, 32, 0.95);
+  backdrop-filter: blur(12px);
+}
+/* ================================
+   🌐 GLOBAL PAGE OFFSET
+   (Applies to ALL pages)
+================================ */
+.app-root {
+  min-height: 100vh;
+  padding-top: 80px;   /* 👈 navbar height + gap */
+  display: flex;
+  flex-direction: column;
+}
+.badge-uncertain {
+  background: rgba(250, 204, 21, 0.15);
+  color: #fde68a;
+}
+

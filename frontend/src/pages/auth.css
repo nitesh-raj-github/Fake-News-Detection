@@ -1,0 +1,134 @@
+/* ================================
+   🔐 AUTH PAGES (LOGIN / SIGNUP)
+================================ */
+
+.auth-page {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Main Card */
+.auth-card {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(30, 41, 59, 0.9);
+  border-radius: 18px;
+  padding: 36px 40px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(16px);
+}
+
+/* Header */
+.auth-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  font-size: 15px;
+  color: #94a3b8;
+  margin-bottom: 26px;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Inputs */
+.auth-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 15px;
+}
+
+.auth-input::placeholder {
+  color: #64748b;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #55a6ff;
+  box-shadow: 0 0 0 2px rgba(85, 166, 255, 0.2);
+}
+
+/* Button */
+.auth-btn {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+  transition: 0.25s ease;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.45);
+}
+
+/* Footer Text */
+.auth-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.auth-footer a {
+  color: #55a6ff;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   📱 RESPONSIVE
+================================ */
+@media (max-width: 700px) {
+  .auth-card {
+    padding: 28px 22px;
+  }
+}
+/* ================================
+   👁️ PASSWORD TOGGLE
+================================ */
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #55a6ff;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ================================
+   ❌ ERROR TEXT
+================================ */
+.error-text {
+  font-size: 13px;
+  color: #f87171;
+  margin-top: -8px;
+}

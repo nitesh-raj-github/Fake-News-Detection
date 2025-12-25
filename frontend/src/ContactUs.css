@@ -1,0 +1,114 @@
+.about-container {
+  width: 92%;
+  max-width: 1200px;
+  margin: 24px auto;
+}
+
+.about-header {
+  text-align: center;
+  padding: 24px;
+}
+
+.about-title {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.about-subtitle {
+  margin-top: 6px;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.about-section {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.section-heading {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 15px;
+  color: var(--text-main);
+  line-height: 1.5rem;
+}
+
+/* FOUNDERS */
+.founders-section {
+  margin-top: 28px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.founder-card {
+  width: calc(50% - 12px);
+  text-align: center;
+  padding: 20px;
+}
+
+.founder-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.founder-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.founder-role {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.founder-speech {
+  font-size: 14px;
+  color: var(--text-main);
+  line-height: 1.4rem;
+  font-style: italic;
+}
+
+/* TIMELINE */
+.timeline {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.about-footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .founder-card {
+    width: 100%;
+  }
+}
