@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# Datasets
+backend/data/*.csv
+
+# Python
+__pycache__/
+venv/
+*.pyc
+
+# Node
+node_modules/
+dist/
